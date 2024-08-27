@@ -1,0 +1,14 @@
+#LR2_2
+
+from mod import amebs
+
+n = int(input("Введіть кількість годин: "))
+print("Кількість амеб після ", n, "годин = ", amebs(n))
+
+
+
+#mod
+
+def amebs(n):
+    periods = n // 3
+    return 2 ** periods
