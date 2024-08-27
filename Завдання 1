@@ -1,0 +1,15 @@
+import math
+
+def expresion  (a):
+    z = (math.sqrt(2))/2 * math.sin (a/2)
+    return z
+
+def amebs(n):
+    periods = n // 3
+    return 2 ** periods
+
+a = int(input("Введіть значення a: "))
+print ("Значення виразу z = ", expresion (a))
+
+n = int(input("Введіть кількість годин: "))
+print("Кількість амеб після", n, "годин = ", amebs(n))
